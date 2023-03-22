@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Home Page</title>
+    </head>
+    <body style="text-align: center; margin: auto 0;">
+        <img src="./static/images/online.svg">
+        <h1>Online</h1>
+        <p>Nice, I'm is online.</p>
+        <h4>Active Service Worker:
+        <div id="version"></div>
+        </h4>
+        <h4>Controlling Service Worker:
+        <div id="version-cache"></div>
+        </h4>
+        <br />
+        <button type="button" id="get_version">
+          Update active SW version
+        </button>
+        <button type="button" id="get_cache_version">
+          Update controlling SW version
+        </button>
+        <br />
+        <br />
+        <button type="button" id="skip_waiting">
+          self.skipWaiting()
+        </button>
+        <button type="button" id="clients_claim">
+          self.clients.claim()
+        </button>
+        <button type="button" id="update">
+          registration.update()
+        </button>
+        <script src="/static/js/bootstrap.js"></script>
+    </body>
+</html>
